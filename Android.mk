@@ -15,6 +15,9 @@ LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_PACKAGE_NAME := Terminal
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
